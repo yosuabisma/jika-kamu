@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/Home">
+<path id="Rectangle Copy 27" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V24H0V0Z" fill="#D8D8D8" fill-opacity="0.01"/>
+<g id="Page 1">
+<path id="Stroke 1" d="M10.5295 2.26291L1.6108 9.14202C1.17348 9.47933 0.545531 9.39826 0.208224 8.96095C-0.129083 8.52363 -0.0480121 7.89568 0.389301 7.55837L9.91871 0.208175C10.2786 -0.0693917 10.7803 -0.0693917 11.1402 0.208175L20.6696 7.55837C21.1069 7.89568 21.188 8.52363 20.8507 8.96095C20.5134 9.39826 19.8854 9.47933 19.4481 9.14202L10.5295 2.26291Z" transform="translate(1.49994 3)" fill="white"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M0 7.52941H4.76471V0H0V7.52941Z" transform="translate(9.70001 12.4706)" fill="white"/>
+<path id="Stroke 4" d="M13.7647 11.6471V1C13.7647 0.447715 14.2124 0 14.7647 0C15.317 0 15.7647 0.447715 15.7647 1V12.6471C15.7647 13.1993 15.317 13.6471 14.7647 13.6471H1C0.447715 13.6471 0 13.1993 0 12.6471V1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1V11.6471H13.7647Z" transform="translate(4.14706 8.29407)" fill="white"/>
+</g>
+</g>
+</svg>
