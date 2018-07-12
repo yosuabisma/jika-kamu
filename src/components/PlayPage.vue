@@ -53,7 +53,9 @@
           </center>
         </slide>
       </carousel-3d>
-      <div class="calculation" v-if="this.chosenPlanetID !== null">
+      <div class="calculation">
+        <h2 v-if="chosenPlanetID != null"> Jika kamu di {{ planets[chosenPlanetID].namaPlanet }}, maka umur kamu adalah {{ Math.floor(planets[chosenPlanetID].period * umur) }} tahun  </h2>
+        <!-- <h2>{{ getUmur(planets[chosenPlanetID].period) }} </h2> -->
       </div>
     </div>
 
@@ -80,31 +82,57 @@
             namaPlanet: 'Merkurius',
             idPlanet: 0,
             imageLink: 'mercury.svg',
-            imageSize: 'width: 70px; height: 70px;'
+            imageSize: 'width: 70px; height: 70px;',
+            period: 0.241
           },
           {
             namaPlanet: 'Venus',
             idPlanet: 1,
             imageLink: 'mars.svg',
-            imageSize: 'width: 80px; height: 80px;'
+            imageSize: 'width: 80px; height: 80px;',
+            period: 0.615
           },
           {
             namaPlanet: 'Bumi',
             idPlanet: 2,
             imageLink: 'planet-earth.svg',
-            imageSize: 'width: 90px; height: 90px;'
+            imageSize: 'width: 90px; height: 90px;',
+            period: 1
           },
           {
             namaPlanet: 'Mars',
             idPlanet: 3,
             imageLink: 'venus.svg',
-            imageSize: 'width: 80px; height: 80px;'
+            imageSize: 'width: 80px; height: 80px;',
+            period: 1.881
           },
           {
             namaPlanet: 'Jupiter',
             idPlanet: 4,
             imageLink: 'jupiter.svg',
-            imageSize: 'width: 120px; height: 120px;'
+            imageSize: 'width: 120px; height: 120px;',
+            period: 11.86
+          },
+          {
+            namaPlanet: 'Saturnus',
+            idPlanet: 5,
+            imageLink: 'saturn.svg',
+            imageSize: 'width: 100px; height: 100px;',
+            period: 29.46
+          },
+          {
+            namaPlanet: 'Uranus',
+            idPlanet: 6,
+            imageLink: 'uranus.svg',
+            imageSize: 'width: 80px; height: 80px;',
+            period: 84.32
+          },
+          {
+            namaPlanet: 'Neptunus',
+            idPlanet: 7,
+            imageLink: 'neptune.svg',
+            imageSize: 'width: 70px; height: 70px;',
+            period: 164.8
           }
         ]
       }
@@ -122,11 +150,14 @@
       },
       test(x) {
         this.chosenPlanetID = x;
+      },
+      getUmur(val) {
+        return this.setUmur(val);
       }
     },
     computed: {
-      getData(foo) {
-        return foo * 2;
+      setUmur(foo) {
+        return foo * this.umur;
       }
     }
   }
